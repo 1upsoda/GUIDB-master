@@ -1,0 +1,5 @@
+SELECT * FROM `books`0
+lol2
+llo3
+olo780
+INSERT INTO `books` (`title`, `read_year`, `author`, `ISBN`) VALUES ('', '', '', '');16
