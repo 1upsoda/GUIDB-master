@@ -61,7 +61,10 @@ public class dataPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.SOUTH, queryButton, -10, SpringLayout.SOUTH, this);
 	}
 
-	
+	/**
+	 * 
+	 * @return all of the fields you have said to return, 
+	 */
 	private String getFields()
 	{
 		String fields = "(";
@@ -81,6 +84,10 @@ public class dataPanel extends JPanel
 		
 		return fields;
 	}
+	/**
+	 * same thing as the getField
+	 * @return
+	 */
 	private String getValues()
 	{
 		String values = "(";
@@ -100,6 +107,9 @@ public class dataPanel extends JPanel
 		
 		return values;
 	}
+	/**
+	 * starts all of the buttons to make them work
+	 */
 	private void setupListeners()
 	{
 //		ArrayList<JTextField> myTextFields = new ArrayList<JTextField>();
@@ -157,6 +167,10 @@ public class dataPanel extends JPanel
 			}
 		});
 	}
+	/** an extra way to get saved file
+	 * 
+	 * @return
+	 */
 	public String readTextFromFile()
 	{
 		String fileText = "";
@@ -183,6 +197,11 @@ public class dataPanel extends JPanel
 		return fileText;
 	}
 	
+	/**
+	 * an extra way to save texxt in the gui
+	 * @param conversation what you want to save
+	 * @param appendToEnd if you want to add it to the end, or in its new line
+	 */
 	public void saveText(String conversation, boolean appendToEnd)
 	{
 		String fileName = "/Users/tpar4829/Documents/saved text.txt";
@@ -223,6 +242,10 @@ public class dataPanel extends JPanel
 			}
 		}
 	}
+	/**
+	 * makes sure all of the panel works corectly (dynamic)
+	 * @param selectedTable
+	 */
 	private void setupPanel(String selectedTable)
 	{
 		

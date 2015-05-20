@@ -126,7 +126,7 @@ public class DBAppController
 
 	}
 	/**
-	 * allows you to pull the info saved on the .save file
+	 * allows you to pull the info saved on the .save file	
 	 */
 	public void loadTimingInformation()
 	{
